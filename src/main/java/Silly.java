@@ -154,7 +154,7 @@ public class Silly implements Comparable<Silly>{
         if(other.toString().equals(this.name)){
             return true;
         }else{
-            return false
+            return false;
         }
     }
 
@@ -180,13 +180,13 @@ public class Silly implements Comparable<Silly>{
      */
     @Override
     public int compareTo(Silly other) {
-        otherName = other.toString();
+        String otherName = other.toString();
         if(otherName.length() < this.name.length()){
             return 1;
         }else if(otherName.length() > this.name.length()){
             return -1;
         }else{
-            return 0
+            return 0;
         }
 
     }
